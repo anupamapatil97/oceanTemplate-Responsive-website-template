@@ -1,0 +1,411 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/ocean-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main h1{
+    font-size: 80px;
+    padding: 0px 0px 45px 0px;
+    font-weight: lighter;
+}
+.main p{
+    font-size: 35px;
+    width: 60%;
+    padding: 0px 0px 45px 0px;
+
+}
+.btn-explore{
+    width: 15%;
+    font-size: 25px;
+    padding: 10px;
+    color: #a1c7f1;
+    border: #fff;
+    border-radius: 10px;
+    font-size: 40px;
+}
+/*main end here*/
+.slider{
+    width: 100%;
+    height: 400px;
+    /* background-color: #eee; */
+    text-align: center;
+}
+.carousel-item{
+    width: 100%;
+    padding: 40px 0;
+}
+.carousel-item h1{
+    color:#60c2d3;
+    padding: 40px 0 35px 0;
+    
+}
+.carousel-indicators li{
+    background-color: #60c2d3 !important;
+}
+.carousel-indicators li:hover{
+    background-color: #fff !important;
+}
+.carousel-item p{
+    font-size: 25px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+/*carousel  slider end here*/
+
+.oceanSky,.oceanSky2{
+    width: 100%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+.textSide{
+    width: 50%;
+    padding: 10px;
+    /* text-align: center; */
+}
+.textSide h2{
+    padding:  30px;
+    color: #60c2d3;
+}
+.textSide p{
+    font-size: 20px;
+    padding: 0 30px;
+    color: #60c2d3;
+    line-height: 40px;
+
+}
+.textSide .btn-readmore{
+    color: #60c2d3;
+
+    background: transparent;
+    padding: 15px 35px;
+    border:2px solid #60c2d3;
+    border-radius: 50px;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.imgSide{
+    width: 50%;
+}
+.imgSide img{
+    height: 400px;
+    width: 100%;
+}
+/* .oceanSky ends here */
+/* about starts here*/
+.about{
+    background-color: #b9d6f4 ;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding :10px 0;
+}
+
+.about h2,.contact h2{
+    padding:40px 0px 30px 0;
+}
+.about p, .contact p{
+    font-size: 24px;
+    margin: 0 auto;
+    width: 60%;
+}
+.allCards{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.card{
+width: 22%;
+background-color: #d3e6f8 !important;
+border: 1px solid white !important;
+}
+.card-title{
+    padding-bottom: 0px !important;
+    font-size: 30px;
+    
+}
+.card-body{
+    font-size: 18px !important;
+    width: 80% !important;
+}
+i{
+    padding-top: 30px !important;
+    color: #81b4eb;
+}
+   /*about ends here*/
+    /*contact start here*/
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.contact-us{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.form-contact{
+    margin: 50px auto;
+    padding:20px 0;
+    width: 50%;
+}
+.form-control{
+    border-radius: 50px !important;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #60c2d3 !important;
+}
+.sub{
+    margin: 10px 30px 10px 0;
+    padding: 0 10px;
+}
+.form .submit{
+    border:1px solid #60c2d3;
+    display: block;
+    border-radius: 50px !important;
+}
+.address{
+    margin: 50px auto;
+    width: 45%;
+    text-align: left;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+.address p{
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+/*************************************media query**************************************/
+@media(min-width:751px) and (max-width:1200px){
+    .main h1{
+        font-size: 80px;
+        padding: 0 0 40px 0;
+    }
+    .main p{
+        font-size:40px;
+        width: 90%;
+        text-align: justify;
+        padding: 0 0 40px 0;
+    }
+    .btn-explore{
+        width: 20%;
+        font-size: 35px;
+        padding: 15px;
+    } 
+    /* main ends here */
+    /* slider or .carousel start here */
+    .carousel-item h1{
+        font-size: 30px;
+    }
+    .carousel-item p{
+        font-size: 20px;
+        width: 80%;
+    
+    } 
+    /* slider or .carousel start here */
+    /* .oceanSky start here */
+    .oceanSky{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .oceanSky2{
+        flex-direction: column;
+    }
+    .textSide{
+        width: 100%;
+    }
+    .imgSide{
+        width: 100%;
+        /* margin: 10px; */
+    }
+        /* .oceanSky ends here */
+
+    .about h2,.contact h2{
+        padding:20px 0px 20px 0;
+    }
+    .about p,.contact p{
+         font-size: 20px;            
+         width: 90%;
+    }
+    .allCards{
+         margin-top: 20px;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        width: 40%;
+        margin: 10px 0;
+    }
+   /*about ends here*/
+    /*contact start here*/
+        .form-contact{
+        margin: 20px auto;
+        /* padding:20px 0; */
+        width: 50%;
+    }
+    .form-control{
+      display: block;
+      padding: 12px;
+      /* margin: 10px auto; */
+    }
+   .submit{
+      margin: 10px auto !important;
+       text-align: center;
+   }
+    .address{
+        margin: 20px auto;
+        width: 50%; 
+
+    }
+    .contact h1{
+        padding-left: 10px !important;
+    }
+ 
+    .address p{
+   
+        font-size: 18px;
+        padding-bottom: 30px;
+       
+    }
+    .address h6{
+        padding: 0px 0 0 20px ;
+    }
+
+}
+
+@media(max-width:750px){
+    .main h1{
+        font-size: 60px;
+        padding: 0 0 35px 0;
+    }
+    .main p{
+        font-size:25px;
+        width: 80%;
+        text-align: justify;
+        padding: 0 0 35px 0;
+    }
+    .btn-explore{
+        width: 35%;
+        font-size: 25px;
+        padding: 15px;
+    }
+      /* main ends here */
+    /* slider or .carousel start here */
+    .carousel-item h1{
+        font-size: 30px;
+    }
+    .carousel-item p{
+        font-size: 20px;
+        width: 80%;
+    
+    }    /* slider or .carousel start here */
+    /* .oceanSky start here */
+    .oceanSky{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .oceanSky2{
+        flex-direction: column;
+    }
+    .textSide{
+        width: 100%;
+    }
+    .imgSide{
+        width: 100%;
+        /* margin: 10px; */
+    } 
+    .textSide h2{
+        padding:  20px;
+    }
+    .textSide p{
+        font-size: 18px;    
+    }
+    .textSide .btn-readmore{
+        border-radius: 40px;
+        font-size: 15px;
+    }
+  
+    .imgSide img{
+        height: 300px;
+        width: 100%;
+    }
+            /* .oceanSky ends here */
+    .about h2,.contact h2{
+      padding:20px 0px 20px 0;
+    }
+    .about p,.contact h2{
+    font-size: 20px;
+    width: 90%;
+     }
+    .allCards{
+     margin-top: 20px;
+      width: 100%;
+     height: auto;
+     flex-wrap: wrap;    
+    }
+    .card{
+        width: 90%;
+        margin: 10px 0;
+    }
+    /*about ends here*/
+    /*contact start here*/
+
+    .contact-us{
+
+        flex-direction: column;
+    
+    }
+    .form-contact{
+        margin: 20px auto;
+        padding:20px 0;
+        width: 100%;
+    }
+    .form-control{
+      display: block;
+      padding: 12px;
+      margin: 10px auto;
+    }
+   .submit{
+      margin: 10px auto !important;
+       text-align: center;
+   }
+    .address{
+        margin: 20px auto;
+        width: 100%; 
+
+    }
+    .address h1{
+        font-size: 25px;
+        padding: 20px;
+    }
+    .address p{
+        width: 100%;
+        font-size: 18px;
+        padding-bottom: 30px;
+        padding: 0px 0 30px 20px;
+    
+    }
+    .address h6{
+        padding: 0px 0 0 20px ;
+    }
+}
